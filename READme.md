@@ -3,11 +3,14 @@
 ```markdown
 # 📘 NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
 
-This repository contains notes, practical projects, and code examples developed while following the [NodeJS - The Complete Guide](https://www.udemy.com/course/nodejs-the-complete-guide/) course by **Maximilian Schwarzmüller** on Udemy.
+This repository contains notes, practical projects, and code examples developed while following 
+the [NodeJS - The Complete Guide](https://www.udemy.com/course/nodejs-the-complete-guide/) course
+ by **Maximilian Schwarzmüller** on Udemy.
 
 ## 🎯 Course Goal
 
-This course focuses on teaching Node.js from scratch to advanced concepts, covering modern backend development techniques such as:
+This course focuses on teaching Node.js from scratch to advanced concepts, covering modern backend 
+development techniques such as:
 
 - RESTful APIs
 - GraphQL
@@ -101,7 +104,8 @@ Instructor on Udemy and co-founder of [Academind](https://academind.com/)
 
 ## 📝 License
 
-This project is intended for personal learning purposes based on the Udemy course. It is not officially affiliated with the instructor or the platform.
+This project is intended for personal learning purposes based on the Udemy course. It is not officially 
+affiliated with the instructor or the platform.
 
 ---
 ```
