@@ -1,0 +1,42 @@
+## Pug
+EJS e Pug são semelhantes no sentido de que ambos são motores de template usados para renderizar HTML no lado do servidor em aplicações Node.js. No entanto, eles têm diferenças significativas em sintaxe e abordagem.
+
+### Semelhanças:
+**Renderização de HTML Dinâmico:**
+- Ambos permitem a inserção de dados dinâmicos em páginas HTML.
+- Exemplo: Exibir uma lista de itens passada pelo servidor.
+
+**Integração com Express:**
+- Ambos podem ser configurados como motores de visualização no Express usando `app.set('view engine', ...)`.
+
+**Suporte a Lógica Básica:**
+- Ambos suportam lógica básica, como loops (`for`) e condicionais (`if`), dentro dos templates.
+
+---
+
+### Uso de `block` no Pug
+No Pug, o `block` é usado para definir áreas de um layout que podem ser preenchidas ou sobrescritas por outros templates que estendem esse layout. Ele é essencial para criar layouts reutilizáveis.
+
+#### Como funciona:
+**Definir um `block` no layout principal:**
+- No arquivo de layout principal (exemplo: `main-layout.pug`), você define um `block` como um espaço reservado.
+
+**Preencher o `block` em um template filho:**
+- Um arquivo que estende o layout pode preencher ou sobrescrever o conteúdo do `block`.
+
+#### Resumo:
+- O `block` é um espaço reservado no layout principal.
+- Ele permite que templates filhos insiram ou sobrescrevam conteúdo específico.
+- É útil para criar layouts consistentes e reutilizáveis em aplicações.
+
+#### Nota sobre Layouts em Motores de Template
+**Objetivo dos Layouts:**
+
+**Reutilização de Código:**
+Layouts definem a estrutura fixa (ex: cabeçalho, rodapé), enquanto páginas individuais fornecem o conteúdo.
+
+**Consistência:**
+Garante visual e estrutura iguais em todas as páginas.
+
+**Facilidade de Manutenção:**
+Mudanças em cabeçalho ou rodapé são feitas em um único lugar e valem para todas as páginas.
