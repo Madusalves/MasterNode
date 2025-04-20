@@ -40,3 +40,55 @@ Garante visual e estrutura iguais em todas as páginas.
 
 **Facilidade de Manutenção:**
 Mudanças em cabeçalho ou rodapé são feitas em um único lugar e valem para todas as páginas.
+
+
+##HandleBars
+ 
+Handlebars is a JavaScript template engine used to generate dynamic HTML on the server or client side. 
+It allows you to create reusable and dynamic HTML pages by inserting data and basic logic directly 
+into the template.
+
+
+---
+
+### 📄 Notes on Handlebars - Usage Example
+
+This example demonstrates how to use **conditionals** and **loops** with the [Handlebars](https://handlebarsjs.com/) templating language.
+
+---
+
+#### ✅ Conditional with `{{#if}}`
+
+```handlebars
+{{#if isAdmin}}
+    <p>Welcome, Admin!</p>
+{{else}}
+    <p>Welcome, User!</p>
+{{/if}}
+```
+
+- **`isAdmin`** is a boolean variable passed to the template.
+- If `true`, it displays “Welcome, Admin!”
+- If `false`, it displays “Welcome, User!”
+
+---
+
+#### 🔁 Loop with `{{#each}}`
+
+```handlebars
+{{#each products}}
+    <li>{{this.name}}</li>
+{{/each}}
+```
+
+- Iterates over the `products` list.
+- For each item, displays the `name` (`this.name`) inside an `<li>` element.
+
+---
+
+#### 📌 Notes
+
+- Handlebars is widely used for template rendering in web applications.
+- It's commonly used with frameworks like **Express.js** in Node.js applications.
+
+---

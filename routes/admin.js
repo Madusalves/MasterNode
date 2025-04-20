@@ -10,7 +10,12 @@ const products = []; //Array to store products
 
 // /admin/add-product => GET
 router.get('/add-product', (req, res, next) => {
-  res.render('add-product', {pageTitle: 'Add Product', path:'/admin/add-product'}); // object shorthand
+  res.render('add-product', {
+    pageTitle: 'Add Product', 
+    path: '/admin/add-product',
+    activeAddProduct: true,
+    productCSS: true
+  });
   // res.sendFile(path.join(rootDir, 'views', 'add-product.html')); //sendFile is used to send a file
 });
 
@@ -21,5 +26,7 @@ router.post('/add-product', (req, res, next) => {
   res.redirect('/');
 });
 
-exports.routes = router;
-exports.products = products;
+module.exports = {
+  routes: router,
+  products: products
+};
