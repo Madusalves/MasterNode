@@ -6,7 +6,9 @@
     <title>{{pageTitle}}</title>
     <link rel="stylesheet" href="/css/main.css">
     {{#if productCSS}}
+    <!-- Handlebars condition to check if productCSS is true -->
     <link rel="stylesheet" href="/css/product.css">
+    <!-- Link to product-specific CSS, loaded only if productCSS is true -->
     {{/if}}
 </head>
 <body>
@@ -15,15 +17,21 @@
             <ul class="main-header__item-list">
                 <li class="main-header__item">
                     <a class="{{#if activeShop}}active{{/if}}" href="/">Shop</a>
+                    <!-- Link to main page, with conditional 'active' class -->
                 </li>
                 <li class="main-header__item">
                     <a class="{{#if activeAddProduct}}active{{/if}}" href="/admin/add-product">Add Product</a>
+                    <!-- Link to add product page, with conditional 'active' class -->
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Main content section -->
         {{{body}}}
+        <!-- Placeholder for page-specific content (using triple mustache for HTML rendering) -->
     </main>
 </body>
+<!-- End of document body -->
 </html>
+<!-- End of HTML document -->

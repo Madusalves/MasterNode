@@ -1,6 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    {{#if productCSS}}
+    <link rel="stylesheet" href="/css/product.css">
+    {{/if}}
+</head>
 <main>
     {{#if hasProducts }}
     <div class="grid">
+        {{! Grid layout for product items }}
+        {{! Each product is displayed in a card format }}
+        {{! The 'each' block helper iterates over the 'prods' array }}
         {{#each prods}}
         <article class="card product-item">
             <header class="card__header">
